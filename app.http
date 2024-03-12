@@ -1,0 +1,30 @@
+GET http://localhost:3001/todos/?category=LEARNING&priority=HIGH
+
+
+###
+GET http://localhost:3001/todos/4/
+
+###
+GET http://localhost:3001/agenda/?date=2021-12-12
+
+### 
+POST http://localhost:3001/todos/  
+Content-Type:application/json 
+
+{
+ "id": 6,
+ "todo": "Finalize event theme",
+ "priority": "LOW",
+ "status": "TO DO",
+ "category": "HOME",
+ "dueDate": "2021-02-22"
+}
+
+### 
+PUT http://localhost:3001/todos/3/
+Content-Type: application/json 
+
+{ "status": "DONE" }
+
+###
+DELETE http://localhost:3001/todos/2/
